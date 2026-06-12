@@ -159,6 +159,6 @@ Angular SSR, TypeScript, RxJS, REST APIs, AI Integration
 **Angular 14+, TypeScript, JavaScript, RxJS, Angular SSR, Reactive Forms, REST APIs, JWT Authentication, RBAC, Angular Signals, Standalone Components, Angular Material, Bootstrap, Git, GitHub, Jira, CI/CD.**
 
 This text is ready for use in LinkedIn, portfolio websites, ATS-friendly resumes, or job applications.
-
+so this is 
 
 and intervio.in my saas app that gained 150+ users and it is a mock intervio platform to practice for the interview technical angular react cybersecurity and behavioral questions with ai 
