@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
-      navbar.classList.add('py-3', 'shadow-md', 'bg-white/80', 'dark:bg-slate-900/85');
+      navbar.classList.add('py-3', 'shadow-md', 'bg-white/80', 'dark:bg-zinc-900/85');
       navbar.classList.remove('py-5', 'bg-transparent');
     } else {
-      navbar.classList.remove('py-3', 'shadow-md', 'bg-white/80', 'dark:bg-slate-900/85');
+      navbar.classList.remove('py-3', 'shadow-md', 'bg-white/80', 'dark:bg-zinc-900/85');
       navbar.classList.add('py-5', 'bg-transparent');
     }
   });
@@ -130,12 +130,12 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       // Toggle button states
       filterBtns.forEach(b => {
-        b.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-500/20');
-        b.classList.add('bg-slate-100', 'dark:bg-slate-800/80', 'text-slate-600', 'dark:text-slate-400');
+        b.classList.remove('bg-black', 'text-white', 'dark:bg-white', 'dark:text-black', 'shadow-lg', 'shadow-black/10');
+        b.classList.add('bg-zinc-100', 'dark:bg-zinc-900', 'text-zinc-600', 'dark:text-zinc-400', 'hover:bg-zinc-200', 'dark:hover:bg-zinc-800');
       });
 
-      btn.classList.add('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-500/20');
-      btn.classList.remove('bg-slate-100', 'dark:bg-slate-800/80', 'text-slate-600', 'dark:text-slate-400');
+      btn.classList.add('bg-black', 'text-white', 'dark:bg-white', 'dark:text-black', 'shadow-lg', 'shadow-black/10');
+      btn.classList.remove('bg-zinc-100', 'dark:bg-zinc-900', 'text-zinc-600', 'dark:text-zinc-400', 'hover:bg-zinc-200', 'dark:hover:bg-zinc-800');
 
       const filterValue = btn.getAttribute('data-filter');
 
@@ -186,11 +186,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     dots.forEach((dot, idx) => {
       if (idx === currentSlide) {
-        dot.classList.add('bg-indigo-600', 'dark:bg-indigo-500', 'w-8');
-        dot.classList.remove('bg-slate-300', 'dark:bg-slate-700', 'w-3');
+        dot.classList.add('bg-black', 'dark:bg-white', 'w-8');
+        dot.classList.remove('bg-zinc-300', 'dark:bg-zinc-700', 'w-3');
       } else {
-        dot.classList.remove('bg-indigo-600', 'dark:bg-indigo-500', 'w-8');
-        dot.classList.add('bg-slate-300', 'dark:bg-slate-700', 'w-3');
+        dot.classList.remove('bg-black', 'dark:bg-white', 'w-8');
+        dot.classList.add('bg-zinc-300', 'dark:bg-zinc-700', 'w-3');
       }
     });
   }
