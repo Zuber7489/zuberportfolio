@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // 8. CONTACT FORM SIMULATION & VALIDATION
+  // 8. CONTACT FORM SIMULATION & VALIDATION (AJAX FORMSPREE)
   // ==========================================
   const contactForm = document.getElementById('contact-form');
   const toastSuccess = document.getElementById('toast-success');
@@ -256,34 +256,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Validation check
       if (!name || !email || !subject || !message) {
-        return; // HTML5 standard inputs will flag this, but safe fallback
+        return; 
       }
 
-      // Simulated network call
+      // Start submission animation states
       submitBtn.disabled = true;
       submitSpinner.classList.remove('hidden');
       submitText.textContent = 'Sending Message...';
 
-      setTimeout(() => {
-        // Show success notification toast
-        toastSuccess.classList.remove('translate-y-24', 'opacity-0');
-        toastSuccess.classList.add('translate-y-0', 'opacity-100');
+      // Perform AJAX Formspree fetch
+      fetch("https://formspree.io/f/xbdezbdb", {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          // Show success toast notification
+          toastSuccess.classList.remove('translate-y-24', 'opacity-0');
+          toastSuccess.classList.add('translate-y-0', 'opacity-100');
 
-        // Reset the form values
-        contactForm.reset();
+          // Reset all form inputs
+          contactForm.reset();
 
-        // Restore button state
+          // Auto-hide success toast after 4.5 seconds
+          setTimeout(() => {
+            toastSuccess.classList.remove('translate-y-0', 'opacity-100');
+            toastSuccess.classList.add('translate-y-24', 'opacity-0');
+          }, 4500);
+        } else {
+          alert("Oops! There was an issue sending your message. Please try again.");
+        }
+      })
+      .catch(error => {
+        alert("Oops! Network connection issue. Please check your connection and try again.");
+      })
+      .finally(() => {
+        // Restore buttons state
         submitBtn.disabled = false;
         submitSpinner.classList.add('hidden');
         submitText.textContent = 'Send Message';
-
-        // Auto hide notification toast after 4.5 seconds
-        setTimeout(() => {
-          toastSuccess.classList.remove('translate-y-0', 'opacity-100');
-          toastSuccess.classList.add('translate-y-24', 'opacity-0');
-        }, 4500);
-
-      }, 1600);
+      });
     });
   }
 
