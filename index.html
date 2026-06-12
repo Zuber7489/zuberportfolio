@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Zuber | Senior Angular Developer & Frontend Engineer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Mohammad Zuber, a professional Angular Developer with 2+ years of experience specializing in high-performance enterprise SPAs, Angular SSR, RxJS, and custom UI design.">
+  <meta name="keywords" content="Angular Developer, Frontend Engineer, TypeScript, RxJS, Angular SSR, Web Development, India, Indore, Mohammad Zuber Portfolio">
+  <meta name="author" content="Mohammad Zuber">
+  
+  <!-- OpenGraph Card for Social Media Sharing -->
+  <meta property="og:title" content="Mohammad Zuber | Angular Developer Portfolio">
+  <meta property="og:description" content="Explore the projects, skills, and professional experience of Mohammad Zuber, an enterprise-grade Angular frontend developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/avatar.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#8b5cf6',
+              600: '#7c3aed',
+              700: '#6d28d9',
+              800: '#5b21b6',
+              900: '#4c1d95',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-[#0b0f19] dark:text-slate-100 min-h-screen transition-colors duration-300 relative">
+
+  <!-- Glow Background Orbs -->
+  <div class="glow-orb-1" aria-hidden="true"></div>
+  <div class="glow-orb-2" aria-hidden="true"></div>
+
+  <!-- Navigation Header -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-40 py-5 transition-all duration-300 bg-transparent backdrop-blur-md">
+    <nav class="container mx-auto px-6 md:px-12 flex justify-between items-center" aria-label="Main Navigation">
+      <!-- Logo -->
+      <a href="#hero" class="text-xl font-bold tracking-tight flex items-center gap-1 group" aria-label="Mohammad Zuber Home">
+        <span class="text-indigo-600 dark:text-indigo-400 font-extrabold group-hover:scale-110 transition-transform">&lt;</span>
+        <span class="text-slate-900 dark:text-white font-extrabold">Zuber</span>
+        <span class="text-indigo-600 dark:text-indigo-400 font-extrabold group-hover:scale-110 transition-transform">/&gt;</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden lg:flex items-center gap-8">
+        <div class="flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+          <a href="#about" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a>
+          <a href="#skills" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Skills</a>
+          <a href="#experience" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience</a>
+          <a href="#projects" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Projects</a>
+          <a href="#services" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Services</a>
+          <a href="#testimonials" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Testimonials</a>
+          <a href="#blog" class="nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Blog</a>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-4 border-l border-slate-200 dark:border-slate-800 pl-6">
+          <!-- Dark/Light Theme Button -->
+          <button id="theme-toggle" type="button" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full p-2.5 transition-colors" aria-label="Toggle Dark/Light Mode">
+            <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+          </button>
+          
+          <a href="#contact" class="px-5 py-2 text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 rounded-full transition-all duration-300 shadow-md shadow-indigo-500/10 hover:shadow-indigo-500/20" aria-label="Hire Mohammad Zuber">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle Buttons -->
+      <div class="flex items-center gap-3 lg:hidden">
+        <!-- Mobile Dark Theme button -->
+        <button id="theme-toggle-mobile" type="button" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full p-2.5 transition-colors" onclick="document.getElementById('theme-toggle').click();" aria-label="Toggle Dark Mode">
+          <svg class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+          <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464a1 1 0 10-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <!-- Mobile hamburger menu -->
+        <button id="menu-toggle" type="button" class="text-slate-700 dark:text-white p-2" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle Navigation Drawer">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-[280px] z-50 bg-white dark:bg-[#0f172a] shadow-2xl translate-x-full transition-transform duration-300 ease-in-out border-l border-slate-100 dark:border-slate-800 flex flex-col justify-between" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="p-6">
+      <div class="flex justify-between items-center mb-10">
+        <span class="text-slate-900 dark:text-white font-bold tracking-tight">&lt;Zuber /&gt;</span>
+        <button id="mobile-menu-close" type="button" class="text-slate-600 dark:text-slate-400 p-2" aria-label="Close Mobile Menu">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div class="flex flex-col gap-6 text-base font-semibold text-slate-800 dark:text-slate-200">
+        <a href="#about" class="mobile-nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a>
+        <a href="#skills" class="mobile-nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="#experience" class="mobile-nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience</a>
+        <a href="#projects" class="mobile-nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#services" class="mobile-nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Services</a>
+        <a href="#testimonials" class="mobile-nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Testimonials</a>
+        <a href="#blog" class="mobile-nav-link hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Blog</a>
+      </div>
+    </div>
+    <div class="p-6 border-t border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50">
+      <a href="#contact" class="mobile-nav-link w-full py-3 inline-block text-center font-bold text-white bg-indigo-600 dark:bg-indigo-500 rounded-lg hover:bg-indigo-700 transition-colors" aria-label="Get in touch with Mohammad Zuber">Get In Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden flex items-center min-h-[90vh]">
+      <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Text Info -->
+        <div class="lg:col-span-7 space-y-6 text-left relative z-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/50 text-indigo-700 dark:text-indigo-400 font-semibold text-xs uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+            Open for Opportunities
+          </div>
+          
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white leading-tight">
+            Hi, I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-500 dark:from-indigo-400 dark:via-purple-400 dark:to-cyan-400">Mohammad Zuber</span>
+          </h1>
+          <p class="text-xl md:text-2xl font-bold text-slate-700 dark:text-slate-300">
+            Angular Developer & Frontend Specialist
+          </p>
+          <p class="text-base md:text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
+            With 2+ years of experience developing enterprise-grade web applications. I specialize in Angular SSR, optimized state management with RxJS, Reactive Forms, and performance tuning for lighting-fast user experiences.
+          </p>
+          
+          <!-- Download & Social Action bar -->
+          <div class="pt-4 flex flex-wrap gap-4 items-center">
+            <!-- CV Download Button (Prints/Views page resume or points to raw Markdown resume) -->
+            <a href="resume.md" download class="px-7 py-3.5 bg-slate-900 text-white dark:bg-white dark:text-slate-950 font-bold rounded-full hover:shadow-lg transition-all duration-300 hover:scale-[1.02] flex items-center gap-2 group" aria-label="Download Zuber's CV">
+              <i data-lucide="download" class="w-5 h-5 group-hover:translate-y-0.5 transition-transform"></i>
+              Download Resume
+            </a>
+            
+            <a href="#contact" class="px-7 py-3.5 bg-white border border-slate-200 text-slate-800 dark:bg-slate-900 dark:border-slate-800 dark:text-white font-bold rounded-full hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all duration-300 flex items-center gap-2" aria-label="View Contact Form">
+              Let's Talk
+            </a>
+
+            <!-- Social Links -->
+            <div class="flex items-center gap-3 md:pl-4 border-t md:border-t-0 md:border-l border-slate-200 dark:border-slate-800 pt-4 md:pt-0 w-full md:w-auto">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-800 rounded-full transition-all" aria-label="Mohammad Zuber on GitHub">
+                <i data-lucide="github" class="w-5 h-5"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-800 rounded-full transition-all" aria-label="Mohammad Zuber on LinkedIn">
+                <i data-lucide="linkedin" class="w-5 h-5"></i>
+              </a>
+              <a href="mailto:zs535659@gmail.com" class="p-3 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-800 rounded-full transition-all" aria-label="Email Mohammad Zuber">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: Animated Code Card & Profile Asset -->
+        <div class="lg:col-span-5 relative flex items-center justify-center">
+          <!-- Main Glowing Backdrops -->
+          <div class="absolute w-72 h-72 bg-gradient-to-tr from-indigo-500 to-pink-500 rounded-full blur-[60px] opacity-40 dark:opacity-20 animate-pulse-slow"></div>
+          
+          <!-- Portrait Container -->
+          <div class="relative z-10 max-w-[280px] sm:max-w-[320px] aspect-square rounded-[2rem] overflow-hidden avatar-glow border-4 border-white dark:border-slate-800 bg-slate-200 dark:bg-slate-900 shadow-xl transition-all hover:scale-[1.02] duration-300 animate-float">
+            <img src="assets/avatar.png" alt="Mohammad Zuber Developer Portrait" class="w-full h-full object-cover">
+          </div>
+          
+          <!-- Floating Angular Component Code Mockup ( recruiters love this!) -->
+          <div class="absolute -right-4 -bottom-6 sm:-right-8 md:-bottom-2 bg-white/95 dark:bg-slate-900/95 p-4 rounded-xl border border-slate-100 dark:border-slate-800/80 shadow-2xl max-w-[240px] font-mono text-[10px] text-slate-700 dark:text-slate-300 backdrop-blur-md z-20 select-none animate-float" style="animation-delay: -3s;">
+            <div class="flex items-center gap-1.5 mb-2.5 pb-1.5 border-b border-slate-100 dark:border-slate-800">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-green-400"></span>
+              <span class="ml-1 text-[8px] text-slate-400 uppercase tracking-widest font-bold">angular-component</span>
+            </div>
+            <p class="text-red-400">@Component<span class="text-slate-400">({</span></p>
+            <p class="pl-3">selector: <span class="text-indigo-400">'zuber-dev'</span>,</p>
+            <p class="pl-3">standalone: <span class="text-green-400">true</span>,</p>
+            <p class="pl-3">templateUrl: <span class="text-indigo-400">'./portfolio.html'</span></p>
+            <p class="text-slate-400">})</p>
+            <p class="text-blue-400">export class <span class="text-emerald-400 font-bold">ZuberComponent</span> <span class="text-slate-400">{</span></p>
+            <p class="pl-3 text-slate-500">// Angular specialist</p>
+            <p class="pl-3">experience = <span class="text-orange-400">'2+ Years'</span>;</p>
+            <p class="pl-3">stack = [<span class="text-cyan-400">'TS'</span>, <span class="text-cyan-400">'RxJS'</span>, <span class="text-cyan-400">'Signals'</span>];</p>
+            <p class="text-slate-400">}</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 relative bg-slate-100/50 dark:bg-slate-900/20">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <h2 class="text-xs uppercase tracking-widest font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">About Me</h2>
+          <p class="text-3xl font-extrabold text-slate-950 dark:text-white">Professional Journey & Career Mission</p>
+          <div class="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Stats Grid -->
+          <div class="lg:col-span-5 grid grid-cols-2 gap-4 md:gap-6 reveal">
+            
+            <div class="p-6 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl shadow-sm hover:border-indigo-400 dark:hover:border-indigo-700/60 transition-all flex flex-col justify-center">
+              <span class="text-4xl md:text-5xl font-extrabold text-indigo-600 dark:text-indigo-400">2+</span>
+              <span class="text-sm font-semibold text-slate-500 dark:text-slate-400 mt-2">Years of Experience</span>
+            </div>
+            
+            <div class="p-6 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl shadow-sm hover:border-indigo-400 dark:hover:border-indigo-700/60 transition-all flex flex-col justify-center">
+              <span class="text-4xl md:text-5xl font-extrabold text-indigo-600 dark:text-indigo-400">150+</span>
+              <span class="text-sm font-semibold text-slate-500 dark:text-slate-400 mt-2">Active SaaS Users</span>
+            </div>
+
+            <div class="p-6 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl shadow-sm hover:border-indigo-400 dark:hover:border-indigo-700/60 transition-all flex flex-col justify-center">
+              <span class="text-4xl md:text-5xl font-extrabold text-indigo-600 dark:text-indigo-400">3+</span>
+              <span class="text-sm font-semibold text-slate-500 dark:text-slate-400 mt-2">Tech Companies Worked</span>
+            </div>
+
+            <div class="p-6 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl shadow-sm hover:border-indigo-400 dark:hover:border-indigo-700/60 transition-all flex flex-col justify-center">
+              <span class="text-4xl md:text-5xl font-extrabold text-indigo-600 dark:text-indigo-400">99%</span>
+              <span class="text-sm font-semibold text-slate-500 dark:text-slate-400 mt-2">Lighthouse Perf Goal</span>
+            </div>
+
+          </div>
+
+          <!-- Description Bio -->
+          <div class="lg:col-span-7 space-y-6 text-left reveal reveal-delay-2">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+              Building Web Apps with Structure and Scalability
+            </h3>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+              I am a results-oriented Angular Developer. My background is rooted in writing clean, modular components, building robust asynchronous workflows, and designing robust system architectures. I love translating Figma templates into scalable responsive web pages.
+            </p>
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+              Over the last 2 years, I have successfully integrated complex REST APIs, enforced Role-Based Access Controls (RBAC), and designed dynamic workflows. My career goal is to continue deepening my technical expertise in enterprise architectures, advanced Webpack configurations, and micro-frontend design to build massive corporate applications.
+            </p>
+            
+            <!-- Education Box -->
+            <div class="p-5 rounded-2xl glass-card flex items-start gap-4 border border-slate-200/40 dark:border-slate-800">
+              <div class="p-3 bg-indigo-50 dark:bg-indigo-950/50 rounded-xl text-indigo-600 dark:text-indigo-400 shrink-0">
+                <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">Education</span>
+                <h4 class="text-base font-bold text-slate-900 dark:text-white mt-0.5">B.Tech in Computer Science</h4>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Chameli Devi Group of Institutions (2020 – 2024)</p>
+                <div class="mt-1 text-xs font-bold text-slate-700 dark:text-slate-300">CGPA: 7.61 / 10</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 relative">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <h2 class="text-xs uppercase tracking-widest font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">Skills</h2>
+          <p class="text-3xl font-extrabold text-slate-950 dark:text-white">Technical Core Competence</p>
+          <div class="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Category 1: Angular & TS Core -->
+          <div class="p-6 rounded-2xl glass-panel relative group overflow-hidden border border-slate-200/50 dark:border-slate-800/80 reveal">
+            <div class="p-3 w-12 h-12 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="codepen" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Angular Core & TS</h3>
+            <ul class="space-y-3.5 text-sm font-medium text-slate-600 dark:text-slate-400">
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Angular 14+ / Standalone
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Angular Signals (V16+)
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> TypeScript & JavaScript ES6+
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Custom Pipes & Directives
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Asynchronous & State -->
+          <div class="p-6 rounded-2xl glass-panel relative group overflow-hidden border border-slate-200/50 dark:border-slate-800/80 reveal reveal-delay-1">
+            <div class="p-3 w-12 h-12 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">RxJS & State</h3>
+            <ul class="space-y-3.5 text-sm font-medium text-slate-600 dark:text-slate-400">
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Observables & Subjects
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> switchMap / mergeMap / map
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Async Data Handling
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Dependency Injection
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Architecture & Security -->
+          <div class="p-6 rounded-2xl glass-panel relative group overflow-hidden border border-slate-200/50 dark:border-slate-800/80 reveal reveal-delay-2">
+            <div class="p-3 w-12 h-12 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="shield" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Architecture & Auth</h3>
+            <ul class="space-y-3.5 text-sm font-medium text-slate-600 dark:text-slate-400">
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Angular SSR (Server Rendering)
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Lazy Loading / Split Bundles
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> JWT Authentication
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Route Guards & Interceptors
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> RBAC (Role-Based Access)
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Tooling & Styles -->
+          <div class="p-6 rounded-2xl glass-panel relative group overflow-hidden border border-slate-200/50 dark:border-slate-800/80 reveal reveal-delay-3">
+            <div class="p-3 w-12 h-12 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-xl mb-6 flex items-center justify-center">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">UI Libraries & Tools</h3>
+            <ul class="space-y-3.5 text-sm font-medium text-slate-600 dark:text-slate-400">
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> CSS3 / SCSS / HTML5
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Tailwind CSS / Bootstrap
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Angular Material / Ionic
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Git / GitHub / Jira
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> REST API Integration
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="py-20 relative bg-slate-100/50 dark:bg-slate-900/20">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <h2 class="text-xs uppercase tracking-widest font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">Experience</h2>
+          <p class="text-3xl font-extrabold text-slate-950 dark:text-white">Career Timeline & Achievements</p>
+          <div class="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto pl-8 sm:pl-10 md:pl-0">
+          <!-- Center line on desktop, Left line on mobile -->
+          <div class="absolute left-4 sm:left-5 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-800" aria-hidden="true"></div>
+
+          <!-- Job 1: Growhut Technologies -->
+          <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-16 reveal">
+            <!-- Timeline dot -->
+            <div class="absolute left-[-24px] sm:left-[-25px] md:left-[calc(50%-10px)] top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-[3px] border-white dark:border-slate-950 timeline-dot z-10" aria-hidden="true"></div>
+            
+            <!-- Job Card (Left Side) -->
+            <div class="md:text-right flex flex-col md:items-end justify-start">
+              <span class="px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/50 text-indigo-700 dark:text-indigo-400 font-bold text-xs uppercase inline-block mb-3">
+                Dec 2025 – May 2026
+              </span>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Angular Developer</h3>
+              <p class="text-md font-bold text-indigo-600 dark:text-indigo-400">Growhut Technologies</p>
+              <p class="text-sm text-slate-400 dark:text-slate-500 mt-0.5">Indore (Remote)</p>
+            </div>
+            
+            <!-- Achievements Card (Right Side) -->
+            <div class="p-6 rounded-2xl glass-panel border border-slate-200/40 dark:border-slate-800 text-left">
+              <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 font-medium">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Developed and configured scalable **Angular SSR** applications ensuring strong Core Web Vitals for SEO indexability.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Created reusable Angular components and design library files using responsive layout systems.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Wrote asynchronous state handlers using **RxJS** pipe operators (switchMap, catchError) to sync with complex microservice REST APIs.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Job 2: Mindcrew Technology -->
+          <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-16 reveal">
+            <!-- Timeline dot -->
+            <div class="absolute left-[-24px] sm:left-[-25px] md:left-[calc(50%-10px)] top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-[3px] border-white dark:border-slate-950 timeline-dot z-10" aria-hidden="true"></div>
+            
+            <!-- Achievements Card (Left Side) - Switches on desktop -->
+            <div class="p-6 rounded-2xl glass-panel border border-slate-200/40 dark:border-slate-800 text-left md:order-1 order-2">
+              <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 font-medium">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Engineered responsive web applications leveraging Angular 14+ standalone architectures and TypeScript.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Integrated complex nested fields validation using **Angular Reactive Forms** and custom asynchronous validators.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Reduced initially loaded bundle sizes by 25% by configuring routing-level **lazy loading** and resource preloading.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Job Card (Right Side) -->
+            <div class="flex flex-col items-start justify-start md:order-2 order-1 md:pl-0">
+              <span class="px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/50 text-indigo-700 dark:text-indigo-400 font-bold text-xs uppercase inline-block mb-3">
+                Jan 2025 – Dec 2025
+              </span>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Angular Developer</h3>
+              <p class="text-md font-bold text-indigo-600 dark:text-indigo-400">Mindcrew Technology Pvt. Ltd.</p>
+              <p class="text-sm text-slate-400 dark:text-slate-500 mt-0.5">Indore, India</p>
+            </div>
+          </div>
+
+          <!-- Job 3: HouseStory Technology -->
+          <div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 reveal">
+            <!-- Timeline dot -->
+            <div class="absolute left-[-24px] sm:left-[-25px] md:left-[calc(50%-10px)] top-1.5 w-5 h-5 rounded-full bg-indigo-600 border-[3px] border-white dark:border-slate-950 timeline-dot z-10" aria-hidden="true"></div>
+            
+            <!-- Job Card (Left Side) -->
+            <div class="md:text-right flex flex-col md:items-end justify-start">
+              <span class="px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/50 text-indigo-700 dark:text-indigo-400 font-bold text-xs uppercase inline-block mb-3">
+                Jan 2024 – Dec 2024
+              </span>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Angular Developer</h3>
+              <p class="text-md font-bold text-indigo-600 dark:text-indigo-400">HouseStory Technology India Pvt. Ltd.</p>
+              <p class="text-sm text-slate-400 dark:text-slate-500 mt-0.5">Indore, India</p>
+            </div>
+            
+            <!-- Achievements Card (Right Side) -->
+            <div class="p-6 rounded-2xl glass-panel border border-slate-200/40 dark:border-slate-800 text-left">
+              <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-400 font-medium">
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Built scalable corporate application modules using the **Angular CLI** and styled with **Angular Material** UI elements.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Improved runtime UI responsiveness through **AOT compilation** and code splitting configurations during production build.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-indigo-500 shrink-0 mt-0.5"></i>
+                  <span>Worked directly under senior developers to design reusable interceptors for handling auth headers.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <h2 class="text-xs uppercase tracking-widest font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">Projects</h2>
+          <p class="text-3xl font-extrabold text-slate-950 dark:text-white">Featured Applications & Labs</p>
+          <div class="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Filters Tabs -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12 reveal">
+          <button type="button" data-filter="all" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-indigo-600 text-white shadow-lg shadow-indigo-500/20">All Projects</button>
+          <button type="button" data-filter="saas" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700/80">SaaS / AI</button>
+          <button type="button" data-filter="enterprise" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700/80">Enterprise</button>
+          <button type="button" data-filter="dashboard" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700/80">Dashboards</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Card 1: Intervio (SaaS / AI) -->
+          <div class="project-card group rounded-3xl overflow-hidden glass-panel border border-slate-200/40 dark:border-slate-800 reveal" data-categories="saas">
+            <div class="relative overflow-hidden aspect-video bg-indigo-900 flex items-center justify-center">
+              <img src="assets/intervio.png" alt="Intervio AI SaaS Mockup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform" aria-label="GitHub Repository for Intervio">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://intervio.in" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform" aria-label="Live Demo of Intervio">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+            <div class="p-6 md:p-8 space-y-4">
+              <div class="flex justify-between items-start">
+                <span class="text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400">SaaS & AI Integration</span>
+                <span class="text-xs bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400 font-bold px-2.5 py-1 rounded-full flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> 150+ Users
+                </span>
+              </div>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Intervio SaaS Mock Platform</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                A mock interview SaaS that facilitates practicing technical concepts (Angular, React, cybersecurity) and behavioral drills. Uses AI modules to generate personalized assessment reviews.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">Angular</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">React</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">AI Integration</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">Tailwind</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Azakaw (Enterprise) -->
+          <div class="project-card group rounded-3xl overflow-hidden glass-panel border border-slate-200/40 dark:border-slate-800 reveal reveal-delay-1" data-categories="enterprise">
+            <div class="relative overflow-hidden aspect-video bg-blue-950 flex items-center justify-center">
+              <img src="assets/azakaw.png" alt="Azakaw AML Compliance Screen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform" aria-label="GitHub Repository for Azakaw">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform" aria-label="Live Demo of Azakaw">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+            <div class="p-6 md:p-8 space-y-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Enterprise AML Platform</span>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Azakaw Transaction Monitoring</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                An AML and transaction monitoring environment configured in Angular SSR. Developed alert dashboards, investigative reporting features, and advanced banking risk charts.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">Angular SSR</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">TypeScript</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">RxJS</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Loan Management System (Dashboard) -->
+          <div class="project-card group rounded-3xl overflow-hidden glass-panel border border-slate-200/40 dark:border-slate-800 reveal" data-categories="dashboard">
+            <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-purple-800 to-indigo-900 flex items-center justify-center p-6">
+              <!-- Visual Mockup using CSS/HTML shapes inside cards -->
+              <div class="w-full h-full bg-slate-950/70 border border-slate-800/80 rounded-xl p-4 flex flex-col justify-between font-mono text-[9px] text-indigo-400 shadow-2xl relative">
+                <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                  <span class="font-bold flex items-center gap-1"><i data-lucide="line-chart" class="w-3.5 h-3.5 text-indigo-400"></i> LMS Dashboard</span>
+                  <span class="text-[8px] bg-indigo-900/60 px-1.5 py-0.5 rounded text-white font-bold">JWT ACTIVE</span>
+                </div>
+                <div class="grid grid-cols-3 gap-2 my-2">
+                  <div class="bg-slate-900/85 border border-slate-800 rounded p-1.5 flex flex-col justify-center">
+                    <span class="text-[7px] text-slate-500 font-bold uppercase">Total Loans</span>
+                    <span class="text-xs font-bold text-white mt-0.5">$3.4M</span>
+                  </div>
+                  <div class="bg-slate-900/85 border border-slate-800 rounded p-1.5 flex flex-col justify-center">
+                    <span class="text-[7px] text-slate-500 font-bold uppercase">Interest Rate</span>
+                    <span class="text-xs font-bold text-white mt-0.5">8.45%</span>
+                  </div>
+                  <div class="bg-slate-900/85 border border-slate-800 rounded p-1.5 flex flex-col justify-center">
+                    <span class="text-[7px] text-slate-500 font-bold uppercase">Performance</span>
+                    <span class="text-xs font-bold text-emerald-400 mt-0.5">+30% 🔥</span>
+                  </div>
+                </div>
+                <div class="w-full bg-slate-900/85 rounded p-2 flex justify-between items-center text-[7px] border border-slate-800">
+                  <span class="text-slate-400">App Speed Optimized</span>
+                  <span class="text-emerald-400">AOT Split Lazy-Loaded</span>
+                </div>
+              </div>
+              <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform" aria-label="GitHub Repository for Loan Management System">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform" aria-label="Live Demo of Loan Management System">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+            <div class="p-6 md:p-8 space-y-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-600 dark:text-pink-400">Fintech Dashboard</span>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Loan Management Dashboard</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                Admin portal monitoring with JWT authentication, custom chart integration, and financial logs tracking. Improved initial performance by 30% via route-level bundle splits.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">Angular 15</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">Chart.js</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">JWT Auth</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">Lazy Loading</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: KV Salary Attendance (Enterprise) -->
+          <div class="project-card group rounded-3xl overflow-hidden glass-panel border border-slate-200/40 dark:border-slate-800 reveal reveal-delay-1" data-categories="enterprise">
+            <div class="relative overflow-hidden aspect-video bg-gradient-to-br from-teal-800 to-emerald-900 flex items-center justify-center p-6">
+              <!-- Visual Mockup using CSS/HTML shapes inside cards -->
+              <div class="w-full h-full bg-slate-950/70 border border-slate-800/80 rounded-xl p-4 flex flex-col justify-between font-mono text-[9px] text-emerald-400 shadow-2xl relative">
+                <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                  <span class="font-bold flex items-center gap-1"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i> KV Approval System</span>
+                  <span class="text-[8px] bg-emerald-900/60 px-1.5 py-0.5 rounded text-white font-bold">RBAC ACTIVE</span>
+                </div>
+                <div class="space-y-1.5 my-2">
+                  <div class="flex justify-between items-center text-[7px] text-slate-400">
+                    <span>Approval Layer 1 (Principal)</span>
+                    <span class="text-emerald-400">APPROVED ✔</span>
+                  </div>
+                  <div class="flex justify-between items-center text-[7px] text-slate-400">
+                    <span>Approval Layer 2 (Admin)</span>
+                    <span class="text-emerald-400">APPROVED ✔</span>
+                  </div>
+                  <div class="flex justify-between items-center text-[7px] text-slate-400">
+                    <span>Approval Layer 3 (Head Office)</span>
+                    <span class="text-yellow-400">PENDING ⏱</span>
+                  </div>
+                </div>
+                <div class="w-full bg-slate-900/85 rounded p-2 flex justify-between items-center text-[7px] border border-slate-800">
+                  <span class="text-slate-400">Real-time attendance logs</span>
+                  <span class="text-white">PDF Auto-generated</span>
+                </div>
+              </div>
+              <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform" aria-label="GitHub Repository for KV System">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-white text-slate-900 rounded-full hover:scale-110 transition-transform" aria-label="Live Demo of KV System">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+            <div class="p-6 md:p-8 space-y-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">Government Portal Workflow</span>
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">KV Salary & Attendance Management</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                Admin workflow system with 3-layer authorization (Principal → HO), attendance logs, and automatic monthly payroll PDF generation on client action.
+              </p>
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">Angular</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">RBAC Security</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">PDF Generation</span>
+                <span class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-semibold rounded-md">REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Offered Section -->
+    <section id="services" class="py-20 relative bg-slate-100/50 dark:bg-slate-900/20">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <h2 class="text-xs uppercase tracking-widest font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">Services</h2>
+          <p class="text-3xl font-extrabold text-slate-950 dark:text-white">What I Bring To Your Team</p>
+          <div class="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Service 1 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-indigo-400 transition-all reveal">
+            <div class="p-3 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-xl w-12 h-12 flex items-center justify-center mb-6">
+              <i data-lucide="laptop" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-2">Single Page Applications (SPA)</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              Developing modern scalable frontend apps in Angular using best architecture practices like standalone modules, signals state management, and lazy routing.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-indigo-400 transition-all reveal reveal-delay-1">
+            <div class="p-3 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-xl w-12 h-12 flex items-center justify-center mb-6">
+              <i data-lucide="gauge" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-2">SSR & Performance Tuning</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              Enabling Server-Side Rendering (SSR) for fast LCP metrics, search crawling, and optimizing web indexation scores.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-indigo-400 transition-all reveal reveal-delay-2">
+            <div class="p-3 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-xl w-12 h-12 flex items-center justify-center mb-6">
+              <i data-lucide="database" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-2">API Integration & Interceptors</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              Connecting REST frameworks smoothly with complex asynchronous models using RxJS HTTP Client interceptors for JWT validation tokens.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-indigo-400 transition-all reveal reveal-delay-3">
+            <div class="p-3 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-xl w-12 h-12 flex items-center justify-center mb-6">
+              <i data-lucide="palette" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-2">Modern Responsive UI Design</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+              Implementing responsive pixel-perfect styles matching strict design frameworks using Tailwind CSS, Bootstrap, or Angular Material.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative overflow-hidden">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <h2 class="text-xs uppercase tracking-widest font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">Testimonials</h2>
+          <p class="text-3xl font-extrabold text-slate-950 dark:text-white">What Leads & Teams Say</p>
+          <div class="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto relative reveal">
+          <!-- Main Carousel wrapper -->
+          <div id="testimonial-wrapper" class="relative overflow-hidden p-6 md:p-12 rounded-3xl glass-panel border border-slate-200/40 dark:border-slate-800 shadow-xl min-h-[280px] flex items-center">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-slide transition-opacity duration-500 w-full space-y-6">
+              <p class="text-base md:text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                "Mohammad Zuber joined our team to assist with SSR and UI layout scaling. He demonstrated immediate speed, implementing reactive components with exceptional accuracy and writing highly structured TypeScript directives. His work on async caching optimization saved us compute overhead."
+              </p>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white">SK</div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900 dark:text-white">Sanjay K.</h4>
+                  <p class="text-xs text-slate-400 dark:text-slate-500">Lead Frontend Architect, Growhut Technologies</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-slide transition-opacity duration-500 w-full space-y-6 opacity-0 absolute">
+              <p class="text-base md:text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                "Zuber has a strong focus on details. He helped build complex workflows inside our validation structures. He writes tidy code comments and handles state operators efficiently. I'd happily work with him on any other Angular codebase."
+              </p>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-500 flex items-center justify-center font-bold text-white">AR</div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900 dark:text-white">Anoop R.</h4>
+                  <p class="text-xs text-slate-400 dark:text-slate-500">Senior Software Engineer, Mindcrew Technology</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-slide transition-opacity duration-500 w-full space-y-6 opacity-0 absolute">
+              <p class="text-base md:text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
+                "His SaaS application Intervio showcases high engineering maturity. Mohammad builds highly clean routes, manages API states smoothly, and pays key attention to performance. Highly recommended developer for complex projects!"
+              </p>
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-pink-500 to-orange-500 flex items-center justify-center font-bold text-white">VN</div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900 dark:text-white">Vikram N.</h4>
+                  <p class="text-xs text-slate-400 dark:text-slate-500">Product Manager, Azakaw Project Lead</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="flex justify-between items-center mt-6 px-4">
+            <div class="flex gap-2">
+              <button id="testimonial-dot-1" type="button" class="testimonial-dot-btn w-8 h-3 rounded-full bg-indigo-600 transition-all duration-300" aria-label="Show slide 1"></button>
+              <button id="testimonial-dot-2" type="button" class="testimonial-dot-btn w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-700 transition-all duration-300" aria-label="Show slide 2"></button>
+              <button id="testimonial-dot-3" type="button" class="testimonial-dot-btn w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-700 transition-all duration-300" aria-label="Show slide 3"></button>
+            </div>
+            
+            <div class="flex gap-3">
+              <button id="prev-testimonial" type="button" class="p-2.5 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-indigo-400 dark:hover:border-indigo-800 transition-colors" aria-label="Previous Testimonial">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              </button>
+              <button id="next-testimonial" type="button" class="p-2.5 rounded-full border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:border-indigo-400 dark:hover:border-indigo-800 transition-colors" aria-label="Next Testimonial">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Blog Articles Section -->
+    <section id="blog" class="py-20 relative bg-slate-100/50 dark:bg-slate-900/20">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <h2 class="text-xs uppercase tracking-widest font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">Blog & Lab Notes</h2>
+          <p class="text-3xl font-extrabold text-slate-950 dark:text-white">Technical Insights & Articles</p>
+          <div class="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Article 1 -->
+          <article class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/40 dark:border-slate-800 flex flex-col justify-between hover:shadow-md transition-shadow group reveal">
+            <div>
+              <div class="flex justify-between items-center text-xs text-slate-400 dark:text-slate-500 mb-4 font-semibold">
+                <time datetime="2026-05-15">May 15, 2026</time>
+                <span>6 min read</span>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 dark:text-white group-hover:text-indigo-500 transition-colors mb-3">
+                <a href="#blog" aria-label="Read article: Optimizing Angular SSR Performance for Enterprise SEO">Optimizing Angular SSR Performance for Enterprise SEO</a>
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-3 font-medium">
+                Server-Side Rendering inside Angular 17+ can sometimes introduce hydration delays. Here is our walkthrough on optimizing critical render pathways, setting lazy hydration nodes, and preloading stylesheets.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+              <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">Angular SSR</span>
+              <a href="#blog" class="text-xs font-bold text-slate-800 dark:text-white flex items-center gap-1 group-hover:translate-x-1 transition-transform" aria-label="Read full article on SSR Optimization">Read More <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/40 dark:border-slate-800 flex flex-col justify-between hover:shadow-md transition-shadow group reveal reveal-delay-1">
+            <div>
+              <div class="flex justify-between items-center text-xs text-slate-400 dark:text-slate-500 mb-4 font-semibold">
+                <time datetime="2026-04-22">Apr 22, 2026</time>
+                <span>8 min read</span>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 dark:text-white group-hover:text-indigo-500 transition-colors mb-3">
+                <a href="#blog" aria-label="Read article: RxJS Patterns: SwitchMap vs MergeMap vs ExhaustMap">RxJS Patterns: SwitchMap vs MergeMap vs ExhaustMap</a>
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-3 font-medium">
+                Understanding stream flattening operators is crucial. This article explains when to abort requests (switchMap), buffer queue streams (concatMap), or ignore concurrent triggers (exhaustMap) inside Angular HttpClient pipelines.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+              <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">RxJS State</span>
+              <a href="#blog" class="text-xs font-bold text-slate-800 dark:text-white flex items-center gap-1 group-hover:translate-x-1 transition-transform" aria-label="Read full article on RxJS Patterns">Read More <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/40 dark:border-slate-800 flex flex-col justify-between hover:shadow-md transition-shadow group reveal reveal-delay-2">
+            <div>
+              <div class="flex justify-between items-center text-xs text-slate-400 dark:text-slate-500 mb-4 font-semibold">
+                <time datetime="2026-03-08">Mar 08, 2026</time>
+                <span>5 min read</span>
+              </div>
+              <h3 class="text-lg font-extrabold text-slate-900 dark:text-white group-hover:text-indigo-500 transition-colors mb-3">
+                <a href="#blog" aria-label="Read article: transition to Standalone Components & Signals">Transition to Standalone Components & Signals</a>
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed line-clamp-3 font-medium">
+                Angular 16 and 18 have introduced major changes. This article walks through migrating old NgModule components to modern standalone elements and using Signals to build fine-grained responsive views.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+              <span class="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-widest">Angular Signals</span>
+              <a href="#blog" class="text-xs font-bold text-slate-800 dark:text-white flex items-center gap-1 group-hover:translate-x-1 transition-transform" aria-label="Read full article on Standalone Components">Read More <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+      <div class="container mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <h2 class="text-xs uppercase tracking-widest font-extrabold text-indigo-600 dark:text-indigo-400 mb-2">Contact</h2>
+          <p class="text-3xl font-extrabold text-slate-950 dark:text-white">Let's Discuss Opportunities</p>
+          <div class="w-16 h-1 bg-indigo-600 dark:bg-indigo-400 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto items-stretch">
+          <!-- Left Info Panel -->
+          <div class="lg:col-span-5 p-8 rounded-3xl glass-panel border border-slate-200/40 dark:border-slate-800 flex flex-col justify-between reveal">
+            <div class="space-y-6">
+              <h3 class="text-xl font-extrabold text-slate-900 dark:text-white">Contact Information</h3>
+              <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                If you are a recruiter looking to fill an Angular/TypeScript developer role, or a product lead looking for modular frontend consulting, feel free to drop me a message.
+              </p>
+              
+              <!-- Direct Contact Details -->
+              <div class="space-y-4 pt-4 text-slate-700 dark:text-slate-300 font-semibold text-sm">
+                <div class="flex items-center gap-3.5">
+                  <div class="p-2.5 bg-indigo-50 dark:bg-slate-800/80 rounded-xl text-indigo-600 dark:text-indigo-400 shrink-0">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                  </div>
+                  <a href="mailto:zs535659@gmail.com" class="hover:text-indigo-600 transition-colors">zs535659@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-3.5">
+                  <div class="p-2.5 bg-indigo-50 dark:bg-slate-800/80 rounded-xl text-indigo-600 dark:text-indigo-400 shrink-0">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                  </div>
+                  <a href="tel:+917489898481" class="hover:text-indigo-600 transition-colors">+91 7489898481</a>
+                </div>
+                <div class="flex items-center gap-3.5">
+                  <div class="p-2.5 bg-indigo-50 dark:bg-slate-800/80 rounded-xl text-indigo-600 dark:text-indigo-400 shrink-0">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                  </div>
+                  <span>Indore, Madhya Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="pt-8 border-t border-slate-100 dark:border-slate-800 mt-8">
+              <span class="text-xs text-slate-400 dark:text-slate-500 uppercase tracking-widest font-extrabold block mb-4">Connect Socially</span>
+              <div class="flex gap-3">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-100 dark:bg-slate-800/50 border border-slate-200/40 dark:border-slate-800/60 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-800 rounded-full transition-all" aria-label="Mohammad Zuber on GitHub">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-100 dark:bg-slate-800/50 border border-slate-200/40 dark:border-slate-800/60 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-800 rounded-full transition-all" aria-label="Mohammad Zuber on LinkedIn">
+                  <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="mailto:zs535659@gmail.com" class="p-3 bg-slate-100 dark:bg-slate-800/50 border border-slate-200/40 dark:border-slate-800/60 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-300 dark:hover:border-indigo-800 rounded-full transition-all" aria-label="Email Zuber">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Interactive Message Form -->
+          <div class="lg:col-span-7 p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/30 dark:border-slate-800 shadow-sm reveal reveal-delay-1 flex flex-col justify-between">
+            <form id="contact-form" class="space-y-5" aria-label="Send Mohammad Zuber a Message">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <!-- Name -->
+                <div class="space-y-1.5 text-left">
+                  <label for="contact-name" class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Full Name</label>
+                  <input type="text" id="contact-name" name="name" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:border-indigo-500 dark:bg-slate-800/50 dark:border-slate-800 dark:text-white dark:focus:border-indigo-500 transition-colors" placeholder="John Doe">
+                </div>
+                <!-- Email -->
+                <div class="space-y-1.5 text-left">
+                  <label for="contact-email" class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Email Address</label>
+                  <input type="email" id="contact-email" name="email" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:border-indigo-500 dark:bg-slate-800/50 dark:border-slate-800 dark:text-white dark:focus:border-indigo-500 transition-colors" placeholder="john@example.com">
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div class="space-y-1.5 text-left">
+                <label for="contact-subject" class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Subject</label>
+                <input type="text" id="contact-subject" name="subject" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:border-indigo-500 dark:bg-slate-800/50 dark:border-slate-800 dark:text-white dark:focus:border-indigo-500 transition-colors" placeholder="Project collaboration opportunities">
+              </div>
+
+              <!-- Message -->
+              <div class="space-y-1.5 text-left">
+                <label for="contact-message" class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Message</label>
+                <textarea id="contact-message" name="message" required rows="5" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:outline-none focus:border-indigo-500 dark:bg-slate-800/50 dark:border-slate-800 dark:text-white dark:focus:border-indigo-500 transition-colors resize-none" placeholder="Let's build something great..."></textarea>
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-bold rounded-xl transition-all shadow-md shadow-indigo-500/10 hover:shadow-indigo-500/20 active:scale-[0.98] flex items-center justify-center gap-2 group" aria-label="Submit message form">
+                <!-- Spinner SVG, hidden by default -->
+                <svg id="submit-btn-spinner" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <span id="submit-btn-text">Send Message</span>
+                <i data-lucide="send" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Navigation -->
+  <footer class="py-12 border-t border-slate-100 dark:border-slate-900 bg-white dark:bg-[#070a12] transition-colors relative z-10">
+    <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6">
+      
+      <!-- Logo copyright info -->
+      <div class="text-center md:text-left space-y-2">
+        <a href="#hero" class="text-lg font-bold text-slate-900 dark:text-white">&lt;Zuber /&gt;</a>
+        <p class="text-xs text-slate-400 dark:text-slate-500 font-semibold">&copy; <span id="copyright-year">2026</span> Mohammad Zuber. All rights reserved.</p>
+      </div>
+
+      <!-- Quick footer links -->
+      <div class="flex flex-wrap justify-center gap-6 text-xs font-bold text-slate-500 dark:text-slate-400">
+        <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
+        <a href="#skills" class="hover:text-indigo-600 transition-colors">Skills</a>
+        <a href="#experience" class="hover:text-indigo-600 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-indigo-600 transition-colors">Projects</a>
+        <a href="#contact" class="hover:text-indigo-600 transition-colors">Contact</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back To Top Button -->
+  <button id="back-to-top" type="button" class="fixed bottom-6 right-6 p-3 rounded-full bg-indigo-600 text-white dark:bg-indigo-500 shadow-xl opacity-0 pointer-events-none translate-y-4 hover:bg-indigo-700 transition-all duration-300 z-35" aria-label="Scroll Back To Top">
+    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- Contact Form Success Toast Notification -->
+  <div id="toast-success" class="fixed bottom-6 left-6 flex items-center gap-3 p-4 bg-emerald-50 border border-emerald-200/50 dark:bg-slate-900 dark:border-slate-800 text-emerald-800 dark:text-emerald-400 rounded-2xl shadow-2xl translate-y-24 opacity-0 transition-all duration-500 z-50 max-w-sm backdrop-blur-md" role="alert" aria-live="polite">
+    <div class="p-2 bg-emerald-500 text-white rounded-xl">
+      <i data-lucide="check" class="w-5 h-5"></i>
+    </div>
+    <div>
+      <h4 class="text-xs font-extrabold uppercase tracking-wide">Success</h4>
+      <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-0.5">Your message has been sent successfully!</p>
+    </div>
+  </div>
+
+  <!-- Lucide Icons Library CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Initialize Icons -->
+  <script>
+    lucide.createIcons();
+    // Dynamic copyright year in footer
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Portfolio Interaction Logic Script -->
+  <script src="script.js"></script>
+</body>
+</html>
