@@ -1,58 +1,49 @@
-Based on your uploaded resume, here's the extracted text in a clean and editable format:
+Here is the extracted text from your resume:
 
 ---
 
-# **MOHAMMAD ZUBER**
+# **Mohammad Zuber**
 
-📍 Indore, Madhya Pradesh
-📞 7489898481
-📧 [zs535659@gmail.com](mailto:zs535659@gmail.com)
+**Indore, Madhya Pradesh**
+📞 7489898481 | ✉️ [zs535659@gmail.com](mailto:zs535659@gmail.com)
 
----
+## Objective
 
-# **Objective**
-
-Angular Developer with 2+ years of experience developing enterprise-grade web applications using Angular 14+, TypeScript, RxJS, and REST APIs. Skilled in Angular SSR, Reactive Forms, Role-Based Access Control (RBAC), JWT Authentication, Lazy Loading, Route Guards, and performance optimization.
+Angular Developer with 3+ years of experience developing enterprise-grade web applications using Angular 14+, TypeScript, RxJS, and REST APIs. Skilled in Angular SSR, Reactive Forms, Role-Based Access Control (RBAC), JWT Authentication, Lazy Loading, Route Guards, and performance optimization.
 
 ---
 
-# **Experience**
+# Experience
 
-## **Growhut Technologies**
+### **Growhut Technologies**
 
 **Angular Developer**
-**December 2025 – May 2026**
+*December 2025 – May 2026*
 
-* Developed and maintained scalable Angular SSR applications.
-* Built reusable components and responsive UI.
-* Integrated REST APIs and implemented RxJS-based asynchronous data handling.
-* Delivered high-performance and user-friendly web applications.
+* Developed and maintained scalable Angular SSR applications with reusable components, responsive UI, REST API integration, and RxJS-based asynchronous data handling.
+* Collaborated with backend developers and QA teams.
+* Wrote clean, maintainable, and documented code.
+* Ensured cross-browser compatibility.
 
----
-
-## **Mindcrew Technology Pvt. Ltd.**
+### **Mindcrew Technology Pvt. Ltd.**
 
 **Angular Developer**
-**January 2025 – December 2025**
+*January 2025 – December 2025*
 
-* Developed responsive Angular 14+ web applications using TypeScript and Reactive Forms.
-* Integrated REST APIs.
-* Improved performance using RxJS optimization and lazy loading architecture.
+* Developed responsive Angular 14+ web applications using TypeScript, Reactive Forms, and REST API integration.
+* Enhanced performance through RxJS optimization and lazy loading architecture.
 
----
-
-## **HouseStory Technology India Pvt. Ltd.**
+### **Veosoft Technology**
 
 **Angular Developer**
-**January 2024 – December 2024**
+*April 2023 – December 2024*
 
-* Built scalable Angular applications using Angular CLI and Angular Material.
-* Enhanced performance through AOT compilation and code splitting.
-* Optimized application architecture.
+* Built scalable and user-friendly Angular applications using Angular CLI and Angular Material.
+* Improved performance through AOT compilation, code-splitting, and optimized application architecture.
 
 ---
 
-# **Skills**
+# Skills
 
 ### Frontend
 
@@ -63,14 +54,12 @@ Angular Developer with 2+ years of experience developing enterprise-grade web ap
 * CSS3
 * SCSS
 * JSON
+* SPA (Single Page Application)
 
-### State Management & Async
+### State & Async
 
-* RxJS
-
-  * Observables
-  * Subjects
-  * Operators (map, switchMap, filter)
+* RxJS (Observables, Subjects)
+* Operators: map, switchMap, filter
 
 ### Architecture
 
@@ -92,72 +81,50 @@ Angular Developer with 2+ years of experience developing enterprise-grade web ap
 * Bootstrap
 * Ionic
 * Responsive Design
+* Pixel Perfect UI
 
 ### Tools
 
 * Git
 * GitHub
 * Jira
+* Agile Methodology
 * CI/CD
 * Cursor AI
 * Kiro
 
 ---
 
-# **Education**
+# Education
 
-## **Chameli Devi Group of Institutions**
+### **CHAMELI DEVI GROUP OF INSTITUTIONS**
 
-**Bachelor of Technology (Computer Science)**
-**2020 – 2024**
+**Bachelor of Technology – Computer Science**
 **CGPA: 7.61**
+*2020 – 2024*
 
 ---
 
-# **Projects**
+# Projects
 
-## **Loan Management System**
+## Loan Management System
 
-* Developed dashboard modules with JWT-based authentication and Chart.js analytics.
-* Improved application performance by 30% using lazy loading and code splitting.
+* Developed a dashboard with JWT-based authentication and analytics modules using Chart.js.
+* Improved application performance by 30% using optimized lazy loading and code splitting.
 
-### Technologies
+## Kendriya Vidyalaya Salary & Attendance Management System
 
-Angular, TypeScript, RxJS, Chart.js, REST APIs, JWT
-
----
-
-## **Kendriya Vidyalaya Salary & Attendance Management System**
-
-* Built a 3-layer approval workflow (Principal → HO).
-* Developed real-time attendance tracking.
-* Implemented Role-Based Access Control (RBAC).
+* Built a 3-Layer Approval Workflow (Principal → HO) and real-time attendance tracking module.
+* Implemented Role-Based Access Control (RBAC) for secure module permissions.
 * Automated salary PDF generation.
-* Integrated complex REST APIs for payroll and leave management.
+* Integrated complex REST APIs for payroll data handling and leave request workflows.
 
-### Technologies
+## Azakaw
 
-Angular, TypeScript, RxJS, REST APIs, RBAC, PDF Generation
-
----
-
-## **Azakaw**
-
-* Developed an enterprise AML and transaction-monitoring platform using Angular SSR.
-* Built modules for alert management, customer operations, compliance investigation, and reporting.
-* Integrated AI-powered features and REST APIs.
-* Optimized performance for banking workflows.
-
-### Technologies
-
-Angular SSR, TypeScript, RxJS, REST APIs, AI Integration
+* Developed an enterprise-level AML and transaction-monitoring platform using Angular SSR for alert management, customer operations, compliance investigation, and reporting workflows.
+* Built responsive UI modules, integrated REST APIs and AI-powered features.
+* Optimized application performance for scalable and efficient banking operations.
 
 ---
 
-## **Core Technologies**
-
-**Angular 14+, TypeScript, JavaScript, RxJS, Angular SSR, Reactive Forms, REST APIs, JWT Authentication, RBAC, Angular Signals, Standalone Components, Angular Material, Bootstrap, Git, GitHub, Jira, CI/CD.**
-
-This text is ready for use in LinkedIn, portfolio websites, ATS-friendly resumes, or job applications.
-
-and intervio.in my saas app that gained 150+ users and it is a mock intervio platform to practice for the interview technical angular react cybersecurity and behavioral questions with ai 
+If you want, I can also convert this into a **clean ATS-friendly resume format** with improved wording and stronger action verbs for better job applications.
