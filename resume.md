@@ -1,51 +1,116 @@
-Here is the extracted text from your resume:
+
+# Mohammad Zuber
+
+📍 Indore, Madhya Pradesh, India
+📞 7489898481
+📧 [zs535659@gmail.com](mailto:zs535659@gmail.com)
 
 ---
 
-# **Mohammad Zuber**
+# Professional Summary
 
-**Indore, Madhya Pradesh**
-📞 7489898481 | ✉️ [zs535659@gmail.com](mailto:zs535659@gmail.com)
+Angular Developer with over 3 years of experience building enterprise-grade web applications using Angular 14+, TypeScript, RxJS, and REST APIs.
 
-## Objective
+Experienced in:
 
-Angular Developer with 3+ years of experience developing enterprise-grade web applications using Angular 14+, TypeScript, RxJS, and REST APIs. Skilled in Angular SSR, Reactive Forms, Role-Based Access Control (RBAC), JWT Authentication, Lazy Loading, Route Guards, and performance optimization.
+* Angular SSR (Server-Side Rendering)
+* Reactive Forms
+* Role-Based Access Control (RBAC)
+* JWT Authentication
+* Lazy Loading
+* Route Guards
+* Angular Signals
+* Performance Optimization
+* REST API Integration
+* Responsive UI Development
 
----
-
-# Experience
-
-### **Growhut Technologies**
-
-**Angular Developer**
-*December 2025 – May 2026*
-
-* Developed and maintained scalable Angular SSR applications with reusable components, responsive UI, REST API integration, and RxJS-based asynchronous data handling.
-* Collaborated with backend developers and QA teams.
-* Wrote clean, maintainable, and documented code.
-* Ensured cross-browser compatibility.
-
-### **Mindcrew Technology Pvt. Ltd.**
-
-**Angular Developer**
-*January 2025 – December 2025*
-
-* Developed responsive Angular 14+ web applications using TypeScript, Reactive Forms, and REST API integration.
-* Enhanced performance through RxJS optimization and lazy loading architecture.
-
-### **Veosoft Technology**
-
-**Angular Developer**
-*April 2023 – December 2024*
-
-* Built scalable and user-friendly Angular applications using Angular CLI and Angular Material.
-* Improved performance through AOT compilation, code-splitting, and optimized application architecture.
+Strong ability to collaborate with backend developers, QA teams, and stakeholders to deliver scalable, maintainable, and high-performance applications.
 
 ---
 
-# Skills
+# Professional Experience
 
-### Frontend
+## Growhut Technologies
+
+**Angular Developer**
+**Duration:** December 2025 – May 2026
+
+### Responsibilities
+
+* Developed and maintained scalable Angular SSR applications.
+* Built reusable Angular components for faster development.
+* Created responsive and user-friendly interfaces.
+* Integrated REST APIs with frontend applications.
+* Utilized RxJS for asynchronous data management.
+* Collaborated closely with backend developers and QA teams.
+* Wrote clean, maintainable, and well-documented code.
+* Ensured cross-browser compatibility and performance optimization.
+
+### Technologies Used
+
+* Angular SSR
+* TypeScript
+* RxJS
+* REST APIs
+* HTML/CSS
+* Angular Material
+
+---
+
+## Mindcrew Technology Pvt. Ltd.
+
+**Angular Developer**
+**Duration:** January 2025 – December 2025
+
+### Responsibilities
+
+* Developed responsive web applications using Angular 14+.
+* Built dynamic forms using Reactive Forms.
+* Integrated backend services through REST APIs.
+* Improved application performance using:
+
+  * RxJS optimization
+  * Lazy loading architecture
+* Implemented reusable UI components.
+
+### Technologies Used
+
+* Angular 14+
+* TypeScript
+* RxJS
+* REST APIs
+* Reactive Forms
+
+---
+
+## Intervio Technologies
+
+**Angular Developer**
+**Duration:** April 2023 – December 2024
+
+### Responsibilities
+
+* Built scalable Angular applications.
+* Developed UI using Angular Material.
+* Enhanced application architecture for better maintainability.
+* Improved application performance using:
+
+  * AOT Compilation
+  * Code Splitting
+  * Optimized Angular Architecture
+
+### Technologies Used
+
+* Angular CLI
+* Angular Material
+* TypeScript
+* Angular Optimization Techniques
+
+---
+
+# Technical Skills
+
+## Frontend Technologies
 
 * Angular 14+
 * TypeScript
@@ -54,19 +119,32 @@ Angular Developer with 3+ years of experience developing enterprise-grade web ap
 * CSS3
 * SCSS
 * JSON
-* SPA (Single Page Application)
+* SPA (Single Page Applications)
 
-### State & Async
+---
 
-* RxJS (Observables, Subjects)
-* Operators: map, switchMap, filter
+## State Management & Asynchronous Programming
 
-### Architecture
+### RxJS
+
+Experience with:
+
+* Observables
+* Subjects
+* Operators:
+
+  * map()
+  * switchMap()
+  * filter()
+
+---
+
+## Angular Architecture & Advanced Concepts
 
 * Lazy Loading
 * Route Guards
 * Custom Pipes
-* Interceptors
+* HTTP Interceptors
 * Reactive Forms
 * JWT Authentication
 * REST APIs
@@ -75,15 +153,19 @@ Angular Developer with 3+ years of experience developing enterprise-grade web ap
 * Angular Signals
 * Standalone Components
 
-### UI Libraries
+---
+
+## UI Frameworks & Design
 
 * Angular Material
 * Bootstrap
-* Ionic
+* Ionic Framework
 * Responsive Design
-* Pixel Perfect UI
+* Pixel Perfect UI Development
 
-### Tools
+---
+
+## Development Tools
 
 * Git
 * GitHub
@@ -97,34 +179,115 @@ Angular Developer with 3+ years of experience developing enterprise-grade web ap
 
 # Education
 
-### **CHAMELI DEVI GROUP OF INSTITUTIONS**
+## CHAMELI DEVI GROUP OF INSTITUTIONS
 
-**Bachelor of Technology – Computer Science**
-**CGPA: 7.61**
-*2020 – 2024*
+**Bachelor of Technology (B.Tech) – Computer Science**
+
+**Duration:** 2020 – 2024
+
+**CGPA:** 7.61
 
 ---
 
 # Projects
 
-## Loan Management System
+## 1. Loan Management System
 
-* Developed a dashboard with JWT-based authentication and analytics modules using Chart.js.
-* Improved application performance by 30% using optimized lazy loading and code splitting.
+### Description
 
-## Kendriya Vidyalaya Salary & Attendance Management System
+Developed a dashboard-driven loan management application with authentication, analytics, and reporting capabilities.
 
-* Built a 3-Layer Approval Workflow (Principal → HO) and real-time attendance tracking module.
-* Implemented Role-Based Access Control (RBAC) for secure module permissions.
-* Automated salary PDF generation.
-* Integrated complex REST APIs for payroll data handling and leave request workflows.
+### Key Contributions
 
-## Azakaw
+* Implemented JWT-based Authentication.
+* Developed analytics dashboards using Chart.js.
+* Built secure user access mechanisms.
+* Improved application performance by approximately 30%.
+* Applied:
 
-* Developed an enterprise-level AML and transaction-monitoring platform using Angular SSR for alert management, customer operations, compliance investigation, and reporting workflows.
-* Built responsive UI modules, integrated REST APIs and AI-powered features.
-* Optimized application performance for scalable and efficient banking operations.
+  * Lazy Loading
+  * Code Splitting
+  * Performance Optimization Techniques
+
+### Technologies
+
+* Angular
+* JWT Authentication
+* Chart.js
+* REST APIs
 
 ---
 
-If you want, I can also convert this into a **clean ATS-friendly resume format** with improved wording and stronger action verbs for better job applications.
+## 2. Kendriya Vidyalaya Salary & Attendance Management System
+
+### Description
+
+Designed and developed a salary processing and attendance management platform with multi-level approval workflows.
+
+### Key Contributions
+
+* Built a 3-Level Approval Workflow:
+
+  * Principal
+  * Head Office (HO)
+  * Final Approval Process
+* Implemented real-time attendance tracking.
+* Developed Role-Based Access Control (RBAC).
+* Automated salary PDF generation.
+* Integrated complex payroll APIs.
+* Created leave management workflows.
+* Managed employee salary processing modules.
+
+### Technologies
+
+* Angular
+* RBAC
+* REST APIs
+* PDF Generation
+* Attendance Management
+
+---
+
+## 3. Azakaw
+
+### Description
+
+Developed an enterprise-level Anti-Money Laundering (AML) and transaction monitoring platform for banking and compliance operations.
+
+### Key Contributions
+
+* Developed Angular SSR modules.
+* Built alert management workflows.
+* Created customer operations interfaces.
+* Implemented compliance investigation modules.
+* Developed reporting dashboards.
+* Integrated AI-powered functionalities.
+* Optimized application performance for large-scale banking operations.
+* Integrated multiple REST APIs.
+
+### Technologies
+
+* Angular SSR
+* REST APIs
+* AI Features
+* Banking Compliance Systems
+* Transaction Monitoring
+
+---
+
+# Resume Strength Analysis
+
+### Strong Points
+
+✅ 3+ years Angular experience
+✅ Angular SSR experience (highly demanded)
+✅ RxJS knowledge
+✅ Enterprise application development
+✅ RBAC and JWT implementation
+✅ Banking/AML domain project experience
+✅ REST API integration experience
+✅ Angular Signals and Standalone Components
+✅ Multiple production-level projects
+
+
+
